@@ -33,9 +33,10 @@
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 24px #10233f08}.symbol{width:44px;height:44px;border-radius:12px;background:var(--pale);color:#0f766e;display:grid;place-items:center;font-size:1.3rem}.card h3{margin:16px 0 7px;color:var(--navy)}.card p{color:var(--muted);margin:0;font-size:.95rem}
     .about{background:#eef5f8}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.about-panel{border-radius:20px;overflow:hidden;box-shadow:0 18px 45px #10233f20}.about-panel img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 28%}.about-copy p{color:#53647a}
     .cta{background:var(--pale);border:1px solid #ccefe9;border-radius:20px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{margin:0;color:var(--navy);font-size:1.8rem}.cta p{margin:7px 0 0;color:var(--muted)}
-    .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}.featured-video{min-width:0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 8px 24px #10233f0a}.video-title{color:var(--navy);font-size:1.02rem;line-height:1.4;min-height:58px;margin:0 0 12px}.video-frame{position:relative;width:100%;aspect-ratio:9/16;max-height:560px;background:#0b1b30;border-radius:13px;overflow:hidden}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-link{margin-top:14px}\n    .social{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.social a{background:white;border:1px solid var(--line);border-radius:10px;padding:10px 15px;font-weight:700;color:var(--navy)}.social a:hover{border-color:var(--teal);color:#0d9488}
+    .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}.featured-video{min-width:0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 8px 24px #10233f0a}.video-title{color:var(--navy);font-size:1.02rem;line-height:1.4;min-height:58px;margin:0 0 12px}.video-frame{position:relative;width:100%;aspect-ratio:9/16;max-height:560px;background:#0b1b30;border-radius:13px;overflow:hidden}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-link{margin-top:14px}\n    .library-tools{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 18px}.library-search{flex:1 1 240px;min-width:0;border:1px solid var(--line);border-radius:11px;padding:13px 15px;font:inherit;background:#fff;color:var(--ink)}.filter-btn{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:999px;padding:10px 15px;font:600 .9rem inherit;cursor:pointer}.filter-btn[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}.library-count{color:var(--muted);font-size:.9rem;margin:0 0 16px}.library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.topic-group{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}.topic-group h3{margin:0 0 12px;color:var(--navy);font-size:1.08rem}.topic-group ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}.topic-group li{border-top:1px solid #edf1f5;padding-top:9px}.topic-group a{color:#087f78;font-weight:650;text-decoration:none}.topic-group a:hover{text-decoration:underline}.topic-group[hidden],.topic-group li[hidden]{display:none!important}.no-results{padding:22px;background:#fff;border:1px dashed #cbd5e1;border-radius:14px;color:var(--muted)}.no-results[hidden]{display:none}
+    .social{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.social a{background:white;border:1px solid var(--line);border-radius:10px;padding:10px 15px;font-weight:700;color:var(--navy)}.social a:hover{border-color:var(--teal);color:#0d9488}
     footer{background:#0b1b30;color:#c5d2df;padding:28px 0;font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.disclaimer{font-size:.82rem;color:#9aabba;max-width:760px;margin-top:12px}
-    @media(max-width:760px){.nav{height:auto;min-height:68px;flex-wrap:wrap;padding:14px 0}nav{width:100%;overflow:auto;gap:18px;padding-bottom:4px}.hero{padding:62px 0}.hero-grid,.about-grid{grid-template-columns:1fr;gap:28px}.cards{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr;max-width:440px}.video-title{min-height:0}.cta{align-items:flex-start;flex-direction:column}section{padding:58px 0}}
+    @media(max-width:760px){.library-grid{grid-template-columns:1fr}.library-tools{gap:8px}.filter-btn{font-size:.82rem}.nav{height:auto;min-height:68px;flex-wrap:wrap;padding:14px 0}nav{width:100%;overflow:auto;gap:18px;padding-bottom:4px}.hero{padding:62px 0}.hero-grid,.about-grid{grid-template-columns:1fr;gap:28px}.cards{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr;max-width:440px}.video-title{min-height:0}.cta{align-items:flex-start;flex-direction:column}section{padding:58px 0}}
   </style>
 </head>
 <body>
@@ -47,32 +48,57 @@
     <article class="card"><div class="symbol">⌕</div><h3>Lab tests explained</h3><p>Learn what common investigations measure, why they are ordered and how results are generally understood.</p></article>
     <article class="card"><div class="symbol">♡</div><h3>Public health</h3><p>Explore prevention, screening, vaccination and public health programmes that support healthier communities.</p></article>
   </div></div></section>
-  <section id="resources"><div class="wrap"><div class="section-kicker">Learn beyond videos</div><h2 class="section-title">Medical articles &amp; resources</h2><p class="intro">A growing collection of easy-to-understand learning resources from MedEduWithDrMeet. Explore the subjects below while written guides are being developed.</p><div class="cards">
-    <article class="card"><div class="symbol">✎</div><h3>Medical explainers</h3><p>Simple, structured explanations of diseases, symptoms, medicines and important clinical concepts.</p><p style="margin-top:14px"><a href="articles/antibiotic-resistance.html" style="color:#0d9488;font-weight:800">Read: Why Are Antibiotics Failing? →</a></p></article>
-    <article class="card"><div class="symbol">⌕</div><h3>Laboratory test guides</h3><p>Understand what common blood tests and investigations measure, and why healthcare professionals use them.</p></article>
-    <article class="card"><div class="symbol">♡</div><h3>Public health resources</h3><p>Explore prevention, vaccination, screening and health-awareness topics that matter to communities.</p></article>
-  </div><div class="card" style="margin-top:22px"><h3>Browse all published articles</h3><p>Choose a guide to explore the topic in detail:</p><ul style="padding-left:20px;line-height:2">
-<li><a href="articles/antibiotic-resistance.html">Antibiotic Resistance Explained</a></li>
-<li><a href="articles/cbc-complete-blood-count-explained.html">CBC — Complete Blood Count</a></li>
-<li><a href="articles/complete-lft-explained.html">Complete Liver Function Tests (LFT)</a></li>
-<li><a href="articles/creatinine-egfr-explained.html">Creatinine and eGFR</a></li>
-<li><a href="articles/crp-test-explained.html">CRP Test</a></li>
-<li><a href="articles/d-dimer-test-explained.html">D-dimer Test</a></li>
-<li><a href="articles/fasting-blood-sugar-vs-hba1c.html">Fasting Blood Sugar vs HbA1c</a></li>
-<li><a href="articles/hba1c-explained.html">HbA1c Explained</a></li>
-<li><a href="articles/hs-crp-explained.html">hs-CRP Explained</a></li>
-<li><a href="articles/insulin-test-explained.html">Insulin Test</a></li>
-<li><a href="articles/iron-studies-explained.html">Iron Studies</a></li>
-<li><a href="articles/lipid-profile-explained.html">Lipid Profile</a></li>
-<li><a href="articles/lipoprotein-a-lpa-explained.html">Lipoprotein(a) — Lp(a)</a></li>
-<li><a href="articles/procalcitonin-pct-explained.html">Procalcitonin (PCT)</a></li>
-<li><a href="articles/sgot-ast-vs-sgpt-alt-explained.html">SGOT (AST) vs SGPT (ALT)</a></li>
-<li><a href="articles/troponin-test-explained.html">Troponin Test</a></li>
-<li><a href="articles/urea-bun-explained.html">Urea and BUN</a></li>
-<li><a href="articles/urine-routine-microscopy-explained.html">Urine Routine and Microscopy</a></li>
-<li><a href="articles/vitamin-b12-deficiency-explained.html">Vitamin B12 Deficiency</a></li>
-<li><a href="articles/ana-test-explained.html">ANA Test</a></li>
-</ul><p style="margin-bottom:0;color:#617086">Content is for education and awareness, not individual medical advice.</p></div></div></section>
+  <section id="resources"><div class="wrap"><div class="section-kicker">Learn beyond videos</div><h2 class="section-title">Medical articles &amp; resources</h2><p class="intro">Browse 20 practical, easy-to-understand guides by subject. Use the search box or topic filters to find a specific investigation or concept.</p>
+  <div class="library-tools" role="search"><input id="articleSearch" class="library-search" type="search" placeholder="Search articles (e.g. HbA1c, kidney, CRP)..." aria-label="Search published articles"><button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All topics</button><button class="filter-btn" type="button" data-filter="metabolic" aria-pressed="false">Diabetes &amp; metabolic</button><button class="filter-btn" type="button" data-filter="heart" aria-pressed="false">Heart &amp; vascular</button><button class="filter-btn" type="button" data-filter="infection" aria-pressed="false">Infection &amp; inflammation</button><button class="filter-btn" type="button" data-filter="organ" aria-pressed="false">Liver, kidney &amp; urine</button><button class="filter-btn" type="button" data-filter="blood" aria-pressed="false">Blood &amp; nutrition</button></div>
+  <p class="library-count" id="articleCount" aria-live="polite">Showing 20 articles</p>
+  <div class="library-grid" id="articleLibrary">
+    <article class="topic-group" data-category="metabolic"><h3>Diabetes &amp; metabolic health</h3><ul>
+      <li><a href="articles/hba1c-explained.html">HbA1c Explained</a></li><li><a href="articles/fasting-blood-sugar-vs-hba1c.html">Fasting Blood Sugar vs HbA1c</a></li><li><a href="articles/insulin-test-explained.html">Insulin Test &amp; HOMA-IR</a></li>
+    </ul></article>
+    <article class="topic-group" data-category="heart"><h3>Heart &amp; cardiovascular health</h3><ul>
+      <li><a href="articles/lipid-profile-explained.html">Lipid Profile</a></li><li><a href="articles/lipoprotein-a-lpa-explained.html">Lipoprotein(a) — Lp(a)</a></li><li><a href="articles/troponin-test-explained.html">Troponin Test</a></li>
+    </ul></article>
+    <article class="topic-group" data-category="infection"><h3>Infection &amp; inflammation</h3><ul>
+      <li><a href="articles/antibiotic-resistance.html">Antibiotic Resistance Explained</a></li><li><a href="articles/crp-test-explained.html">CRP Test</a></li><li><a href="articles/hs-crp-explained.html">hs-CRP Explained</a></li><li><a href="articles/procalcitonin-pct-explained.html">Procalcitonin (PCT)</a></li><li><a href="articles/d-dimer-test-explained.html">D-dimer Test</a></li><li><a href="articles/ana-test-explained.html">ANA Test</a></li>
+    </ul></article>
+    <article class="topic-group" data-category="organ"><h3>Liver, kidney &amp; urine</h3><ul>
+      <li><a href="articles/complete-lft-explained.html">Complete Liver Function Tests (LFT)</a></li><li><a href="articles/sgot-ast-vs-sgpt-alt-explained.html">SGOT (AST) vs SGPT (ALT)</a></li><li><a href="articles/creatinine-egfr-explained.html">Creatinine and eGFR</a></li><li><a href="articles/urea-bun-explained.html">Urea and BUN</a></li><li><a href="articles/urine-routine-microscopy-explained.html">Urine Routine and Microscopy</a></li>
+    </ul></article>
+    <article class="topic-group" data-category="blood"><h3>Blood tests &amp; nutrition</h3><ul>
+      <li><a href="articles/cbc-complete-blood-count-explained.html">CBC — Complete Blood Count</a></li><li><a href="articles/iron-studies-explained.html">Iron Studies</a></li><li><a href="articles/vitamin-b12-deficiency-explained.html">Vitamin B12 Deficiency</a></li>
+    </ul></article>
+  </div><p class="no-results" id="noArticles" hidden>No matching articles found. Try another search term or choose “All topics”.</p><p style="color:#617086;font-size:.88rem;margin-top:20px">Content is for education and awareness, not individual medical advice. New guides will be added gradually.</p>
+</div></section>
+<script>
+(function(){
+ const search=document.getElementById('articleSearch');
+ const buttons=[...document.querySelectorAll('.filter-btn')];
+ const groups=[...document.querySelectorAll('.topic-group')];
+ const count=document.getElementById('articleCount');
+ const empty=document.getElementById('noArticles');
+ let active='all';
+ function update(){
+  const term=search.value.trim().toLowerCase();let shown=0;
+  groups.forEach(group=>{
+   const categoryMatch=active==='all'||group.dataset.category===active;
+   let groupCount=0;
+   group.querySelectorAll('li').forEach(item=>{
+    const match=categoryMatch&&item.textContent.toLowerCase().includes(term);
+    item.hidden=!match;if(match){shown++;groupCount++;}
+   });
+   group.hidden=groupCount===0;
+  });
+  count.textContent='Showing '+shown+' of 20 articles';
+  empty.hidden=shown!==0;
+ }
+ buttons.forEach(button=>button.addEventListener('click',()=>{
+  active=button.dataset.filter;
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+  update();
+ }));
+ search.addEventListener('input',update);
+})();
+</script>
   <section class="about" id="about"><div class="wrap about-grid"><div class="about-panel"><img src="https://raw.githubusercontent.com/meetj3028-lang/MedEduWithDrMeet/main/file_00000000ccfc8208b7bbdaaf876fe684.png?v=2" alt="Dr Meet Joshi in his medical education studio"></div><div class="about-copy"><div class="section-kicker">About the educator</div><h2 class="section-title">Dr Meet Joshi</h2><p>Welcome to MedEduWithDrMeet — a medical education platform focused on making health information understandable and accessible.</p><p>Dr Meet Joshi holds an MBBS degree and brings clinical experience from 8 months as a Junior Resident in the ICU at Banas Medical College and Research Institute, Palanpur, followed by 3 years of experience as a Medical Officer.</p><p>He is currently working as a Medical Officer and continues to create educational content on medical concepts, laboratory investigations and public health with a practical, learner-friendly approach.</p></div></div></section>
   <section id="videos"><div class="wrap"><div class="section-kicker">Featured video</div><h2 class="section-title">Watch and learn</h2><p class="intro">Start with this featured short from MedEduWithDrMeet. More videos will be added here as the library grows.</p><div class="video-grid"><div class="featured-video"><h3 class="video-title">Why There’s Still No Cure for Rabies? — Episode 4</h3><div class="video-frame"><iframe src="https://www.youtube.com/embed/XgkSNjN-pUc" title="Why There’s Still No Cure for Rabies? — Episode 4" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-link"><a class="btn primary" href="https://youtube.com/shorts/XgkSNjN-pUc" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
 <div class="featured-video"><h3 class="video-title">When Rabies Reaches the Brain — The Deadliest Stage</h3><div class="video-frame"><iframe src="https://www.youtube.com/embed/ZWx4ZdXNJWM" title="When Rabies Reaches the Brain — The Deadliest Stage" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-link"><a class="btn primary" href="https://youtube.com/shorts/ZWx4ZdXNJWM" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
