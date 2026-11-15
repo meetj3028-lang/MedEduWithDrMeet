@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meetj3028-lang.github.io/MedEduWithDrMeet/sitemap.xml
