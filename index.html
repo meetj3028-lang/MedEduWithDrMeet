@@ -50,9 +50,9 @@
     <article class="card"><div class="symbol">⌕</div><h3>Lab tests explained</h3><p>Learn what common investigations measure, why they are ordered and how results are generally understood.</p></article>
     <article class="card"><div class="symbol">♡</div><h3>Public health</h3><p>Explore prevention, screening, vaccination and public health programmes that support healthier communities.</p></article>
   </div></div></section>
-  <section id="resources"><div class="wrap"><div class="section-kicker">Learn beyond videos</div><h2 class="section-title">Medical articles &amp; resources</h2><p class="intro">Browse 21 practical, easy-to-understand guides by subject. Use the search box or topic filters to find a specific investigation or concept.</p>
+  <section id="resources"><div class="wrap"><div class="section-kicker">Learn beyond videos</div><h2 class="section-title">Medical articles &amp; resources</h2><p class="intro">Browse 22 practical, easy-to-understand guides by subject. Use the search box or topic filters to find a specific investigation or concept.</p>
   <div class="library-tools" role="search"><input id="articleSearch" class="library-search" type="search" placeholder="Search articles (e.g. HbA1c, kidney, CRP)..." aria-label="Search published articles"><button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All topics</button><button class="filter-btn" type="button" data-filter="metabolic" aria-pressed="false">Diabetes &amp; metabolic</button><button class="filter-btn" type="button" data-filter="heart" aria-pressed="false">Heart &amp; vascular</button><button class="filter-btn" type="button" data-filter="infection" aria-pressed="false">Infection &amp; inflammation</button><button class="filter-btn" type="button" data-filter="organ" aria-pressed="false">Liver, kidney &amp; urine</button><button class="filter-btn" type="button" data-filter="blood" aria-pressed="false">Blood &amp; nutrition</button></div>
-  <p class="library-count" id="articleCount" aria-live="polite">Showing 21 articles</p>
+  <p class="library-count" id="articleCount" aria-live="polite">Showing 22 articles</p>
   <div class="library-grid" id="articleLibrary">
     <article class="topic-group" data-category="metabolic"><h3>Diabetes &amp; metabolic health</h3><ul>
       <li><a href="articles/hba1c-explained.html">HbA1c Explained</a></li><li><a href="articles/fasting-blood-sugar-vs-hba1c.html">Fasting Blood Sugar vs HbA1c</a></li><li><a href="articles/insulin-test-explained.html">Insulin Test &amp; HOMA-IR</a></li>
@@ -66,7 +66,7 @@
     <article class="topic-group" data-category="organ"><h3>Liver, kidney &amp; urine</h3><ul>
       <li><a href="articles/complete-lft-explained.html">Complete Liver Function Tests (LFT)</a></li><li><a href="articles/sgot-ast-vs-sgpt-alt-explained.html">SGOT (AST) vs SGPT (ALT)</a></li><li><a href="articles/creatinine-egfr-explained.html">Creatinine and eGFR</a></li><li><a href="articles/urea-bun-explained.html">Urea and BUN</a></li><li><a href="articles/urine-routine-microscopy-explained.html">Urine Routine and Microscopy</a></li>
     </ul></article>
-    <article class="topic-group" data-category="blood"><h3>Blood tests &amp; nutrition</h3><ul>
+    <article class="topic-group" data-category="blood"><h3>Blood tests &amp; nutrition</h3><ul>\n      <li><a href="articles/potassium-blood-test-explained.html">Potassium Blood Test (High &amp; Low Potassium)</a></li>
       <li><a href="articles/cbc-complete-blood-count-explained.html">CBC — Complete Blood Count</a></li><li><a href="articles/iron-studies-explained.html">Iron Studies</a></li><li><a href="articles/vitamin-b12-deficiency-explained.html">Vitamin B12 Deficiency</a></li><li><a href="articles/vitamin-d-test-explained.html">Vitamin D Test (25-OH Vitamin D)</a></li>
     </ul></article>
   </div><p class="no-results" id="noArticles" hidden>No matching articles found. Try another search term or choose “All topics”.</p><p style="color:#617086;font-size:.88rem;margin-top:20px">Content is for education and awareness, not individual medical advice. New guides will be added gradually.</p>
@@ -90,7 +90,7 @@
    });
    group.hidden=groupCount===0;
   });
-  count.textContent='Showing '+shown+' of 21 articles';
+  count.textContent='Showing '+shown+' of 22 articles';
   empty.hidden=shown!==0;
  }
  buttons.forEach(button=>button.addEventListener('click',()=>{
